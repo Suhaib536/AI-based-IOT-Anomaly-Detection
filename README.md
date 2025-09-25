@@ -131,6 +131,21 @@ jupyter notebook IotModel.ipynb
 
 ---
 
+## 📖 Citation
+
+If you use this work, please cite it as follows:
+
+```bibtex
+@misc{shafi2025explainable,
+  author       = {Suhaib},
+  title        = {Explainable, Privacy-Aware AI Pipeline for Sustainable Resource Management},
+  year         = {2025},
+  howpublished = {GitHub repository},
+  note         = {\url{https://github.com/Suhaib536/AI-based-IOT-Anomaly-Detection.git}}
+}
+```
+---
+
 ## 🧑‍💻 Skills Demonstrated
 - Data preprocessing & feature engineering.
 - Handling imbalanced datasets.
@@ -147,6 +162,12 @@ jupyter notebook IotModel.ipynb
 - Explore federated learning for distributed IoT networks.
 - Benchmark against additional IoT datasets.
 
+---
+## Limitations, Risks & Ethical Considerations
+
+- Data privacy: Raw sensor streams could contain sensitive geographic or personal activity patterns. Implement local DP (src/privacy.py) and minimize transmission.
+- Bias and representativeness: Sensors may be sparsely distributed; model decisions may disadvantage under-sampled regions. Provide fairness audits and domain experts review.
+- Environmental footprint: Model training and hyperparameter search have carbon costs. Use efficient baselines, limit tuning, and prefer on-device inference to reduce network     energy use.
 ---
 
 <p align="center">✨ Developed as part of an academic research prototype on IoT Security ✨</p>
