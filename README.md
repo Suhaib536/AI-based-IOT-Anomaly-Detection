@@ -111,6 +111,31 @@ IoT devices generate massive amounts of traffic that can be exploited by attacke
 </details>
 
 ---
+# Technical Description — System Architecture
+
+A compact ASCII diagram below shows the high-level components.
+
+## ASCII Diagram
+
+```text
++----------------------+     +-----------------+     +--------------------+
+|  Sensor Network      | --> |  Edge Preproc   | --> |  Edge Inference    |
+| (Air / Weather / IoT)|     |  (filter, DP)   |     |  (quantized model) |
++----------------------+     +-----------------+     +--------------------+
+         |                          |                         |
+         |                          v                         v
+         |                   +----------------+          +-----------------+
+         +-----------------> |  Gateway /     | <------> |  Explainability |
+                             |  Aggregation   |          |  & Logging      |
+                             +----------------+          +-----------------+
+                                       |
+                                       v
+                             +------------------------+
+                             |  Central Optimizer /   |
+                             |  Dashboard / Archive   |
+                             +------------------------+
+```
+---
 
 ## ⚡ Usage
 ```bash
