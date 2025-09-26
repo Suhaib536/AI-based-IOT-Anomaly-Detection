@@ -16,7 +16,7 @@
 
 ## 📑 Table of Contents
 - [Overview](#overview)
-- [Objectives](#objectives)
+- [Objectives & Contributions](#objectives)
 - [Dataset](#dataset)
 - [Methodology](#methodology)
   - [Data Preprocessing](#data-preprocessing)
@@ -38,12 +38,21 @@ IoT devices generate massive amounts of traffic that can be exploited by attacke
 
 ---
 
-## 🎯 Objectives
-- Build a reproducible pipeline for IoT anomaly detection.
-- Compare **supervised vs unsupervised models**.
-- Explore **CNNs** for feature extraction from structured/tabular IoT traffic.
-- Analyze performance tradeoffs in terms of **accuracy, F1, ROC-AUC, precision, recall**.
+## 🎯 Objectives & Contributions
 
+**Primary objectives**
+
+- Design an end-to-end pipeline from raw multi-sensor data to edge-deployable models and optimization recommendations.
+- Ensure explainability and privacy-aware processing in the ML lifecycle.
+- Provide fully reproducible experiments and packaging suitable for academic evaluation.
+
+**Contributions**
+
+- A modular sensor-fusion architecture enabling late/early fusion strategies with configurable components.
+- Implementation of explainability modules (SHAP/feature attribution) integrated into evaluation and deployment.
+- Edge deployment recipes (model quantization and lightweight inference examples).
+- Reproducible environment and automation scripts for experiments, including requirements.txt.
+- Ethical risk assessment and mitigation guidance for environmental AI systems.
 ---
 
 ## 📂 Dataset
@@ -193,6 +202,14 @@ If you use this work, please cite it as follows:
 - Data privacy: Raw sensor streams could contain sensitive geographic or personal activity patterns. Implement local DP (src/privacy.py) and minimize transmission.
 - Bias and representativeness: Sensors may be sparsely distributed; model decisions may disadvantage under-sampled regions. Provide fairness audits and domain experts review.
 - Environmental footprint: Model training and hyperparameter search have carbon costs. Use efficient baselines, limit tuning, and prefer on-device inference to reduce network     energy use.
+---
+## Future Work and Extension Ideas
+
+- Integrate federated learning for cross-city model collaboration without sharing raw data.
+- Add counterfactual explanations and local rule extraction for policy-makers.
+- Implement real-world pilot in collaboration with municipal authorities to validate socio-environmental impact.
+- Add uncertainty-aware optimization (stochastic programming) for robust resource allocation.
+- Cross-disciplinary extension: couple with socio-economic models to estimate policy outcomes and SDG impacts.
 ---
 
 <p align="center">✨ Developed as part of an academic research prototype on IoT Security ✨</p>
