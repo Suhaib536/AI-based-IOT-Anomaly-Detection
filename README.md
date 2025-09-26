@@ -213,3 +213,5 @@ If you use this work, please cite it as follows:
 ---
 
 <p align="center">✨ Developed as part of an academic research prototype on IoT Security ✨</p>
+<h2 align="center">⭐ If you found this project useful or interesting, could I please get a star? ⭐</h2>
+
