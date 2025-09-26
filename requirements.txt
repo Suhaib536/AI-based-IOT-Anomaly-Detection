@@ -1,0 +1,41 @@
+# Core Python
+numpy
+pandas
+scipy
+
+# Machine Learning / Deep Learning
+scikit-learn
+tensorflow
+torch
+torchvision
+torchaudio
+
+# Explainable AI
+shap
+lime
+
+# Data Visualization
+matplotlib
+seaborn
+plotly
+
+# Privacy / Differential Privacy
+opacus
+pytorch-dp
+
+# Edge Deployment & Optimization
+onnx
+onnxruntime
+tensorflow-lite
+
+# Sensor & IoT Data Handling
+paho-mqtt
+pyserial
+
+# Web APIs / Backend (for integration if needed)
+fastapi
+uvicorn
+
+# Utilities
+tqdm
+joblib
